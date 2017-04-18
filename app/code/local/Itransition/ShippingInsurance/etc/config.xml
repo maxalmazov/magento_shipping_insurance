@@ -6,4 +6,18 @@
             <version>0.0.1</version>
         </Itransition_ShippingInsurance>
     </modules>
+
+    <global>
+        <blocks></blocks>
+        <helpers>
+            <itransition_shippinginsurance>
+                <class>Itransition_ShippingInsurance_Helper</class>
+            </itransition_shippinginsurance>
+        </helpers>
+        <models>
+            <itransition_shippinginsurance>
+                <class>Itransition_ShippingInsurance_Model</class>
+            </itransition_shippinginsurance>
+        </models>
+    </global>
 </config>

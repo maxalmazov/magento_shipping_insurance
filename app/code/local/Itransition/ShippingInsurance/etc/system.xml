@@ -19,15 +19,30 @@
                     <show_in_store>1</show_in_store>
                     <expanded>1</expanded>
                     <fields>
-                        <insurance_enable>
-                            <label>Enable module</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        <shippinginsurance_label>
+                            <label>Insurance label</label>
+                            <frontend_type>text</frontend_type>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </insurance_enable>
+                        </shippinginsurance_label>
+                        <shippinginsurance_type>
+                            <label>Insurance type</label>
+                            <frontend_type>radios</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </shippinginsurance_type>
+                        <insurance_value>
+                            <label>Insurance value</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </insurance_value>
                     </fields>
                 </shippinginsurance_group>
             </groups>

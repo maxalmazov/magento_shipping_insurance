@@ -24,6 +24,7 @@
         <models>
             <itransition_shippinginsurance>
                 <class>Itransition_ShippingInsurance_Model</class>
+                <resourceModel>shippinginsurance</resourceModel>
             </itransition_shippinginsurance>
         </models>
 
@@ -38,6 +39,15 @@
                 </observers>
             </checkout_cart_add_product_complete>
         </events>
+
+        <resources>
+            <shippinginsurance_setup>
+                <setup>
+                    <module>Itransition_ShippingInsurance</module>
+                    <class>Mage_Sales_Model_Resource_Setup</class>
+                </setup>
+            </shippinginsurance_setup>
+        </resources>
 
     </global>
     <frontend>

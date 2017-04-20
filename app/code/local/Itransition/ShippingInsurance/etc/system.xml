@@ -36,7 +36,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </shippinginsurance_type>
-                        <insurance_value>
+                        <shippinginsurance_value>
                             <label>Insurance value</label>
                             <frontend_type>text</frontend_type>
                             <backend_model>itransition_shippinginsurance/setting_validate</backend_model>
@@ -44,7 +44,7 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </insurance_value>
+                        </shippinginsurance_value>
                     </fields>
                 </shippinginsurance_group>
             </groups>

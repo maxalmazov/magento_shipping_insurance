@@ -29,7 +29,7 @@
         </models>
 
         <events>
-            <checkout_cart_add_product_complete>
+            <checkout_controller_onepage_save_shipping_method>
                 <observers>
                     <itransition_shippinginsurance_observer>
                         <type>singleton</type>
@@ -37,7 +37,7 @@
                         <method>checkoutObserver</method>
                     </itransition_shippinginsurance_observer>
                 </observers>
-            </checkout_cart_add_product_complete>
+            </checkout_controller_onepage_save_shipping_method>
         </events>
 
         <resources>

@@ -1,14 +1,12 @@
 <?php
+
 class Itransition_ShippingInsurance_Model_Setting_Type
 {
-    const  PERCENT = 0;
-    const FIXED = 1;
-
-    public function setting()
+    public function toOptionArray()
     {
         return [
-            ['value' => self::PERCENT, 'label' => 'Percentage of order'],
-            ['value' => self::FIXED, 'label' => 'Fixed']
+            ['value' => 0, 'label' => 'Percentage of order'],
+            ['value' => 1, 'label' => 'Fixed']
         ];
     }
 }

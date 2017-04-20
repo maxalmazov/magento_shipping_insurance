@@ -24,7 +24,7 @@
         <models>
             <itransition_shippinginsurance>
                 <class>Itransition_ShippingInsurance_Model</class>
-                <resourceModel>shippinginsurance</resourceModel>
+                <resourceModel>itransition_shippinginsurance</resourceModel>
             </itransition_shippinginsurance>
         </models>
 

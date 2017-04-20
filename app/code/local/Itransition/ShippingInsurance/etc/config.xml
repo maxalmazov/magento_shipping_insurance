@@ -3,21 +3,50 @@
 <config>
     <modules>
         <Itransition_ShippingInsurance>
-            <version>0.0.1</version>
+            <version>1.0.0</version>
         </Itransition_ShippingInsurance>
     </modules>
 
     <global>
-        <blocks></blocks>
+
+        <blocks>
+            <itransition_shippinginsurance>
+                <class>Itransition_ShippingInsurance_Block</class>
+            </itransition_shippinginsurance>
+        </blocks>
+
         <helpers>
             <itransition_shippinginsurance>
                 <class>Itransition_ShippingInsurance_Helper</class>
             </itransition_shippinginsurance>
         </helpers>
+
         <models>
             <itransition_shippinginsurance>
                 <class>Itransition_ShippingInsurance_Model</class>
             </itransition_shippinginsurance>
         </models>
+
+        <events>
+            <checkout_cart_add_product_complete>
+                <observers>
+                    <itransition_shippinginsurance_observer>
+                        <type>singleton</type>
+                        <class>itransition_shippinginsurance/observer</class>
+                        <method>checkoutObserver</method>
+                    </itransition_shippinginsurance_observer>
+                </observers>
+            </checkout_cart_add_product_complete>
+        </events>
+
     </global>
+    <frontend>
+        <layout>
+            <updates>
+                <itransition_shippinginsurance>
+                    <file>itransition_shipping_insurance.xml</file>
+                </itransition_shippinginsurance>
+            </updates>
+        </layout>
+    </frontend>
 </config>

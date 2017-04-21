@@ -1,5 +1,5 @@
 <?php
-class Itransition_ShippingInsurance_Block_Add_ToOrder extends Mage_Sales_Block_Order_Totals
+class Itransition_ShippingInsurance_Block_Add_ToInvoice extends Mage_Sales_Block_Order_Invoice_Totals
 {
     protected $_code = 'shipping_insurance';
 

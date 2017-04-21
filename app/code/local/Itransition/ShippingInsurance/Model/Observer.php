@@ -9,7 +9,9 @@ class Itransition_ShippingInsurance_Model_Observer
         $accepted = Mage::app()->getRequest()->getParam('shippinginsurance_enabled', false);
 
         if ($accepted) {
-
+            $shippingMethod = $address->getShippingMethod();
+            $address->setInsuranceShippingMethod($shippingMethod);
+            $quote->setInsuranceShippingMethod($shippingMethod);
         }
     }
 }

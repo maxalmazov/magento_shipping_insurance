@@ -49,6 +49,16 @@
             </shippinginsurance_setup>
         </resources>
 
+        <sales>
+            <quote>
+                <totals>
+                    <itransition_shipping_insurance>
+                        <class>itransition_shippinginsurance/Total_Quote</class>
+                    </itransition_shipping_insurance>
+                </totals>
+            </quote>
+        </sales>
+
     </global>
     <frontend>
         <layout>

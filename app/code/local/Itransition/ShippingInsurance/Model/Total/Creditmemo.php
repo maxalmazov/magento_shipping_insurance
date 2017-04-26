@@ -5,8 +5,9 @@ class Itransition_ShippingInsurance_Model_Total_Creditmemo extends Mage_Sales_Mo
     {
         $order = $creditmemo->getOrder();
         $costInsurance = $order->getShippingInsurance();
+        $isModuleEnabled = Mage::getStoreConfig('shippinginsurance_setting/shippinginsurance_group/shippinginsurance_enabled');
 
-        if ($order->getInsuranceShippingMethod()) {
+        if ($isModuleEnabled && $order->getInsuranceShippingMethod()) {
             $creditmemo->setGrandTotal($creditmemo->getGrandTotal() + $costInsurance);
             $creditmemo->setBaseGrandTotal($creditmemo->getBaseGrandTotal() + $costInsurance);
         }

@@ -7,13 +7,15 @@ class Itransition_ShippingInsurance_Model_Total_Quote extends Mage_Sales_Model_Q
     public function collect(Mage_Sales_Model_Quote_Address $address)
     {
         parent::collect($address);
-        $items = $this->_getAddressItems($address);
-        if (!count($items)) {
-            return $this;
+        $isModuleEnabled = Mage::getStoreConfig('shippinginsurance_setting/shippinginsurance_group/shippinginsurance_enabled');
+        if ($isModuleEnabled) {
+            $items = $this->_getAddressItems($address);
+            if (!count($items)) {
+                return $this;
+            }
+            $costInsurance = $this->getInsuranceCost($address);
+            $this->setGrandTotalWithInsuranceCost($address, $costInsurance);
         }
-        $costInsurance = $this->getInsuranceCost($address);
-        $this->setGrandTotalWithInsuranceCost($address, $costInsurance);
-
     }
 
     public function fetch(Mage_Sales_Model_Quote_Address $address)

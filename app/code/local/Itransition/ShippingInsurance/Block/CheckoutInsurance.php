@@ -8,4 +8,9 @@ class Itransition_ShippingInsurance_Block_CheckoutInsurance extends Mage_Checkou
 
         return $cost;
     }
+
+    public function isModuleEnabled()
+    {
+        return Mage::getStoreConfig('shippinginsurance_setting/shippinginsurance_group/shippinginsurance_enabled');
+    }
 }

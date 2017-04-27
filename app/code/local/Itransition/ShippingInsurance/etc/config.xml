@@ -20,6 +20,13 @@
                     <order_totals>Itransition_ShippingInsurance_Block_Add_ToOrder</order_totals>
                 </rewrite>
             </sales>
+            <adminhtml>
+                <rewrite>
+                    <sales_order_totals>Itransition_ShippingInsurance_Block_Add_Admin_ToOrder</sales_order_totals>
+                    <sales_order_invoice_totals>Itransition_ShippingInsurance_Block_Add_Admin_ToInvoice</sales_order_invoice_totals>
+                    <sales_order_creditmemo_totals>Itransition_ShippingInsurance_Block_Add_Admin_ToCreditmemo</sales_order_creditmemo_totals>
+                </rewrite>
+            </adminhtml>
         </blocks>
 
         <helpers>
